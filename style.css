@@ -92,7 +92,7 @@ nav {
 }
 
 .content-container {
-  background: url('P1030030_2.jpg');
+  background: url('images/P1030030_2.JPG');
   background-position: 50% 50%;
   background-size: cover;
   height: 92vh;
@@ -206,7 +206,7 @@ nav {
 
 @media screen and (max-width: 600px) {
   .content-container {
-    background: url('P1030045_2.jpg');
+    background: url('images/P1030045_2.JPG');
   }
 
   .coming-soon {
