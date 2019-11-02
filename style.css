@@ -92,7 +92,7 @@ nav {
 }
 
 .content-container {
-  background: url('P1030030_2.JPG');
+  background: url('P1030030_2.jpg');
   background-position: 50% 50%;
   background-size: cover;
   height: 92vh;
@@ -206,7 +206,7 @@ nav {
 
 @media screen and (max-width: 600px) {
   .content-container {
-    background: url('https://github.com/graphitate/littleaussietradies-v1/blob/gh-pages/P1030045_2.jpg');
+    background: url('P1030045_2.jpg');
   }
 
   .coming-soon {
