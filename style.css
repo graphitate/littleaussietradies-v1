@@ -1,0 +1,280 @@
+/* vars */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: rgb(255, 255, 255);
+  --neonPink: rgb(211, 34, 196);
+  --neonGreen: rgb(68, 212, 49);
+  --neonOrange: rgb(243, 101, 35);
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+body {
+  background: #ccc;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 3px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+}
+
+.head-container {
+  width: 100%;
+  background: url('/img/P1030030_2.JPG');
+  background-position: center;
+  min-height: 700px;
+  background-size: cover;
+}
+
+/* nav */
+
+.main-bar {
+  display: grid;
+  grid-template-columns: 200px auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0;
+}
+
+.main-bar h1 {
+  width: 200px;
+  color: white;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-left: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 8px;
+  background: rgba(199, 20, 160, 0.781)
+}
+
+.main-nav ul {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav li {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: rgb(201, 201, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin: 0;
+  height: 80px;
+}
+
+.main-nav a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* top container */
+.top-container {
+  display: block;
+  margin: 0;
+  padding: 0 0 60px 0;
+}
+
+.main-caption {
+  color: white;
+  padding: 0 40px;
+}
+
+.main-caption h1 {
+  font-size: 4.2em;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 50px 300px 0 0px;
+
+}
+
+.main-caption p {
+  font-size: 1.6em;
+  margin-bottom: 50px;
+}
+
+.top-container .btn {
+  background-color: var(--neonPink);
+  font-size: 0.9rem;
+}
+
+/* boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 30px;
+
+}
+
+
+
+.box {
+  background: var(--primary);
+  text-align: left;
+  padding: 1.8rem;
+
+}
+
+.box h3 {
+  color: var(--neonOrange);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.box p {
+  margin-bottom: 20px;
+}
+
+.box .muted {
+  color: rgb(235, 235, 235);
+  margin: 15px 0;
+
+}
+
+.box .btn {
+  font-size: 0.9rem;
+  background: var(--neonOrange);
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* contact-us */
+
+.contact-us .main-caption {
+  margin: 40px 0;
+}
+
+.contact-us .boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0
+}
+
+.contact-us .btn {
+  background: var(--neonGreen);
+}
+
+.contact-us .box {
+  background-color: #ccc;
+  text-align: center;
+  color: var(--dark);
+}
+
+/* footer */
+footer {
+  margin-top: 4rem;
+  background: var(--dark);
+  color: rgb(126, 126, 126);
+  padding: 1rem;
+}
+
+/* responsive */
+
+@media(max-width: 800px) {
+
+  .main-bar {
+    display: flex;
+    background: none;
+    /* grid-template-columns: 1fr; */
+  }
+
+  .main-bar h1 {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 0;
+    background: rgba(199, 20, 160, 0);
+    color: rgba(199, 20, 160, 0.781);
+    height: 80px;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+
+
+  }
+
+  .main-nav li {
+    padding: 0;
+    display: flex;
+
+  }
+
+  .main-nav ul a {
+    padding: 0;
+    height: 80px;
+    padding: 0 30px;
+    width: 100%;
+    background: rgba(199, 20, 160, 0.781);
+    color: rgb(255, 211, 237);
+    justify-content: flex-end;
+  }
+
+  .main-nav ul a:hover {
+    background: none;
+    background: rgba(124, 13, 100, 0.952);
+  }
+
+  .head-container {
+    background: url('/img/P1030045_2.JPG');
+    min-height: 750px;
+    background-size: cover;
+  }
+
+  .main-caption h1 {
+    margin-right: 0;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-us .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-us .box {
+    border-top: 1px dotted rgb(170, 170, 170);
+  }
+}
